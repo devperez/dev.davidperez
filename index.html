@@ -28,9 +28,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> -->
-
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -46,8 +44,8 @@
       </div>
 
       <div class="navbar">
-        <a class="links" href="#aboutme">MES PRESTATIONS</a>
-        <a class="links" href="#skills">MES RÉALISATIONS</a>
+        <a class="links" href="#prestations">MES PRESTATIONS</a>
+        <a class="links" href="realisations.html">MES RÉALISATIONS</a>
         <a class="links" href="#portfolio">QUI SUIS-JE ?</a>
         <a class="links" href="#contact-me">CONTACTEZ-MOI</a>
         <a class="icon1" href="https://github.com/devperez" target="_blank"  rel="noopener noreferrer"><img class="icon" src="images/Github.svg"></a>
@@ -80,12 +78,20 @@
       <img class="bracket" src="/images/angle-bracket.svg" alt="flèche décorative" />
     </div>
     <div class="pourquoi__text__wrapper">
-      <p class="pourquoi__text">Avoir un magasin quand on vend quelque chose est une évidence. Avoir un site internet l'est aussi car de nos jours, une présence dans le monde réel ne suffit plus. Ainsi, avoir "pignon sur internet" est primordial pour développer son activité.</p>
+      <p class="pourquoi__text">Avoir un magasin quand on vend quelque chose est une évidence. Avoir un site internet l'est aussi : de nos jours, une présence dans le monde réel ne suffit plus, avoir "pignon sur internet" est primordial pour développer son activité.</p>
       <br />
       <p class="pourquoi__text">Pour vous guider dans la création de votre site, vous pourrez facilement trouver sur internet un nombre incalculable de ressources, de sites et de tutoriels, alors quel est l'intérêt de le faire créer par un spécialiste ? Un site conçu et réalisé par un professionnel suscitera plus facilement la confiance chez son visiteur et aura plus de chances de transformer une simple visite en une vente.</p>
       <br />
-      <p class="pourquoi__text">C'est là tout mon travail ! En accord avec votre image, vos valeurs et vos souhaits, je vous créerai : • un site moderne, intuitif et épuré, • un site adapté à toutes les tailles d'écrans, • un site bien référencé pour que l'on vous trouve facilement, • et enfin, un site qui répond entièrement à vos exigences.</p>
+      <p class="pourquoi__text">C'est là tout mon travail ! En accord avec votre image, vos valeurs et vos souhaits, je vous créerai :<br />
+        <ul>
+          <li>un site moderne, intuitif et épuré,</li>
+          <li>un site adapté à toutes les tailles d'écrans,</li>
+          <li>un site bien référencé pour que l'on vous trouve facilement,</li>
+          <li>et enfin, un site qui répond entièrement à vos exigences.</li>
+        </ul>
+      </p>
     </div>
+    <span id="prestations"></span>
   </section>
 
   <section class="prestations">
@@ -98,24 +104,26 @@
       <p class="prestations__text">Mes services s'adaptent à vos projets que vous soyez un particulier, une association ou un PME.<br />
       Je peux vous créer un site unique, sur-mesure et optimisé pour les moteurs de recherches (référencement naturel), puis le mettre en ligne et le maintenir.</p>
     </div>
-    <div class="prestagrid">
-      <div class="presta__item1">
-        <p class="presta__item__text">Design du site assorti à votre identité visuelle et adapté à tous les écrans (responsive design)</p>
-      </div>
-      <div class="presta__item1">
-        <p class="presta__item__text">Création d'une interface d'administration (back office) pour vous permettre de gérer le contenu de votre site</p>
-      </div>
-      <div class="presta__item">
-        <p class="presta__item__text">Rédaction de contenu et/ou conseil à la rédaction</p>
-      </div>
-      <div class="presta__item">
-        <p class="presta__item__text">Refonte de votre site ou ajout de nouveaux contenus</p>
-      </div>
-      <div class="presta__item">
-        <p class="presta__item__text">Traduction en anglais de votre site</p>
-      </div>
-      <div class="presta__item">
-        <p class="presta__item__text">Maintenance de votre site : sauvegardes, mises à jour...</p>
+    <div class="prestagrid__wrapper">
+      <div class="prestagrid">
+        <div class="presta__item1">
+          <p class="presta__item__text">Design du site assorti à votre identité visuelle et adapté à tous les écrans (responsive design)</p>
+        </div>
+        <div class="presta__item1">
+          <p class="presta__item__text">Création d'une interface d'administration (back office) pour vous permettre de gérer le contenu de votre site</p>
+        </div>
+        <div class="presta__item">
+          <p class="presta__item__text">Rédaction de contenu et/ou conseil à la rédaction</p>
+        </div>
+        <div class="presta__item">
+          <p class="presta__item__text">Refonte de votre site ou ajout de nouveaux contenus</p>
+        </div>
+        <div class="presta__item">
+          <p class="presta__item__text">Traduction en anglais de votre site</p>
+        </div>
+        <div class="presta__item">
+          <p class="presta__item__text">Maintenance de votre site : sauvegardes, mises à jour...</p>
+        </div>
       </div>
     </div>
     <div class="btn">
@@ -142,7 +150,7 @@
           </div>
           <div class="carousel-item">
             <p class="carousel__title d-block w-100">Julie G. | Cheffe d'entreprise<br />Restaurant Lili Bowl | Cahors</p>
-            <p class="carousel__text">David a réalisé le site internet de mon restaurant (<a href="https://www.lilibowl.fr" target="_blank" rel="noopener noreferrer">www.lilibowl.fr</a>). Je suis ravie de son professionnalisme. Il a pris le temps de reformuler mes attentes pour être sûr de bien comprendre. Il a fait des recherches graphiques pour répondre au plus près de mon exigence esthétique. Il a su m'aiguiller sur l'importance des mots clés dans les textes et sur l'ergonomie du site. je suis ravie et fière du résultat. Vous pouvez lui confier vos projets sans crainte. Ils seront bien menés. je recommande à 100% les qualités de David en tant que développeur de site Web.</p>
+            <p class="carousel__text">David a réalisé le site internet de mon restaurant (<a class="link2" href="https://www.lilibowl.fr" target="_blank" rel="noopener noreferrer">www.lilibowl.fr</a>). Je suis ravie de son professionnalisme. Il a pris le temps de reformuler mes attentes pour être sûr de bien comprendre. Il a fait des recherches graphiques pour répondre au plus près de mon exigence esthétique. Il a su m'aiguiller sur l'importance des mots clés dans les textes et sur l'ergonomie du site. je suis ravie et fière du résultat. Vous pouvez lui confier vos projets sans crainte. Ils seront bien menés. je recommande à 100% les qualités de David en tant que développeur de site Web.</p>
           </div>
         </div>
       </div>
@@ -172,12 +180,13 @@
         Le site est aujourd'hui terminé, en ligne et le restaurant est prêt à être découvert par plus de gens encore.<br />
         <br />
         J’ai créé plusieurs pages afin de présenter les diverses activités de Lili BOwL, comme ses projets de sensibilisation à la cuisine saine et éco-responsable et ses formations à la cuisine végétale. J’ai ajouté la possibilité de s'abonner à une newsletter pour recevoir les menus du restaurant qui changent tous les mois.
-        j’ai créé une interface d'administration pour Julie et ses employés qui offre plusieurs fonctionnalités :<br />
-        - gestion des comptes administrateurs (création et suppression),<br />
-        - gestion des adresses mails données par les utilisateurs (possibilité de les exporter au format CSV),<br />
-        - publication des menus.<br />
-        Ce site est réalisé sur mesure d'après les exigences de Julie et sera sans doute appelé à évoluer au fil du temps.
-      </p>
+        j’ai créé une interface d'administration pour Julie et ses employés qui offre plusieurs fonctionnalités :<br /></p>
+        <ul>
+          <li>gestion des comptes administrateurs (création et suppression),</li>
+          <li>gestion des adresses mails données par les utilisateurs (possibilité de les exporter au format CSV),</li>
+          <li>publication des menus.</li>
+        </ul>
+        <p class="projet__text">Ce site est réalisé sur mesure d'après les exigences de Julie et sera sans doute appelé à évoluer au fil du temps.</p>
     </div>
     <div class="btn__wrapper">
       <a href="https://www.lilibowl.fr" target="_blank" rel="noopener noreferrer" class="btn3">VISITER LE SITE</a>
@@ -230,6 +239,7 @@
 
     <p class="footer">Site conçu par <span class="link">Sofia</span> et codé par David | Copyright &copy;David PEREZ 2022 | <span class="link">Mentions légales</span></p>
   </section>
-  </body>
+
+    </body>
 </html>
 

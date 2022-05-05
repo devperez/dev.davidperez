@@ -86,6 +86,14 @@ p {
     color: #EBDBFF;
 }
 
+ul {
+    color: #EBDBFF;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38.4px;
+}
+
 footer {
     background-color: #21004D;
     padding-top: 48px;
@@ -107,9 +115,11 @@ footer {
 
 .links {
     color: #57FFA0;
-    font-size: 1.125rem;
+    font-size: 18px;
+    font-family: 'Open Sans';
     font-weight: 600;
-    line-height: 120%;
+    line-height: 21.6px;
+    letter-spacing: 1.6px;
     margin-left: 48px;
 }
 
@@ -152,7 +162,10 @@ footer {
 .herobox {
 display: flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content: space-around;
+/* margin-left: auto;
+margin-right: auto; */
+/* width: 1200px; */
 }
 
 .herotext {
@@ -309,13 +322,20 @@ padding-bottom: auto;
     font-size: 24px;
     font-weight: 400;
     line-height: 38.4px;
+    padding-bottom: 48px;
+}
+
+.prestagrid__wrapper {
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .prestagrid {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 60px 0;
+    grid-template-rows: auto auto auto; 
+    gap: 60px 120px;
     justify-content: center;
     justify-items: center;
 }
@@ -338,7 +358,12 @@ padding-bottom: auto;
 }
 
 .presta__item__text {
+    font-family: 'Ubuntu Mono';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.8px;
     color: #57FFA0;
+    width: 432px;
 }
 
 .btn {
@@ -415,6 +440,7 @@ padding-bottom: auto;
     background-image: url(/images/arrow_left.svg);
     width: 32px;
     height: 32px;
+    /* margin-right: 250px; */
 }
 
 .carousel-control-next-icon {
@@ -430,7 +456,12 @@ padding-bottom: auto;
 }
 
 .carousel-control-prev {
-    margin-right: 32px;
+    margin-right: 40px;
+}
+
+.link2 {
+    color: #21004D;
+    text-decoration: underline;
 }
 
 .btn-wrapper {
