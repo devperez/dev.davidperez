@@ -18,8 +18,8 @@
 }
 
 .card {
-    width: 734px;
-    /* height: 685px; */
+    width: 816px;
+    height: 850px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;
@@ -32,14 +32,12 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
-    margin-left: 32px;
+    margin-left: 62px;
     margin-top: 32px;
     margin-bottom: 6px;
 }
 
-.picture {
-    width: 638px;
-    /* height: 600px; */
+.picture__wrapper {
     margin-left: auto;
     margin-right: auto;
 }
@@ -51,6 +49,33 @@
     font-size: 18px;
     line-height: 21.6px;
     letter-spacing: 1.6px;
-    margin-left: 32px;
+    margin-left: 62px;
     margin-top: 16px;
+}
+
+.picture {
+    width:691px;
+}
+
+.card__text__wrapper {
+    width:680px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+}
+
+.card__text {
+    color: #21004D;
+}
+
+.images__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 62px;
+    margin-right: 62px;
+    margin-top: 24px;
+}
+
+.backoffice {
+    width: 125px
 }

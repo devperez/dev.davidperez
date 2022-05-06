@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
 
 <head>
 
@@ -22,14 +22,17 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="realisations.css">
+    <link rel="stylesheet" href="lightbox.css">
 
     <link rel="icon" href="images/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="lightbox.js"></script>
+
 </head>
 
 <body>
@@ -65,16 +68,73 @@
 
         <div class="card">
             <h3 class="card__title">Lili BOwL</h3>
-            <div class="picture">
-                <a href="https://www.lilibowl.fr" target="_blank" rel="noopener noreferrer"><img src="/images/LiliBowl.png" alt="Capture d'écran de la page d'accueil du site Lili Bowl" /></a>
+            <div class="picture__wrapper">
+                <a href="https://www.lilibowl.fr" target="_blank" rel="noopener noreferrer"><img class="picture" src="/images/LiliBowl.png" alt="Capture d'écran de la page d'accueil du site Lili Bowl" /></a>
             </div>
             <div class="tech">
                 Figma | HTML | CSS | Bootstrap | JQuery | Ajax | Laravel | SQL |
             </div>
             <div class="card__text__wrapper">
                 <p class="card__text">
-                    
+                    Julie voulait un site sur lequel elle pourrait changer elle-même les menus. J'ai créé une partie administration qui lui permet, sans mon intervention, de faire ses changements, comme elle le souhaite.
+                    Elle peut également récupérer les adresses mails des internautes qui s'inscrivent à sa newsletter.<br />
+                    Les miniatures ci-dessous illustrent cette partie "cachée" du site.<br />
+                    Le site lui permet de communiquer sur toutes les autres activités qu'elle mène de front en plus du restaurant.
                 </p>
+            </div>
+            <div class="images__wrapper">
+                <a href="images/backoffice1(1).png" data-title="Visualisation de tous les mails enregistrés en base de données" data-lightbox="image1"><img src="/images/backoffice1__min.png" /></a>
+                <a href="images/backoffice2(1).png" data-title="Visualisation des mails enregistrés au cours du mois" data-lightbox="image2"><img src="/images/backoffice2(2).png" /></a>
+                <a href="images/backoffice3.png" data-title="Page permettant de mettre à jour les menus" data-lightbox="image3"><img src="/images/backoffice3(1).png" />
+                <a href="images/backoffice4.png" data-title="Formulaire permettant de créer un nouvel administrateur" data-lightbox="image4"><img src="/images/backoffice4(1).png" />
             </div>
         </div>
     </section>
+    <section class="contact">
+        <div class="contact__wrapper">
+            <img src="/images/angle-bracket.svg" alt="flèche décorative" />
+            <h2 class="contact__title">Contactez-moi</h2>
+            <img class="bracket" src="/images/angle-bracket.svg" alt="flèche décorative" />
+        </div>
+        <div class="contact__text__wrapper">
+            <p class="contact__text">
+            Vous pouvez me contactez par mail à <span class="link">dev.davidperez@gmail.com</span>, ou en remplissant le formulaire ci-dessous.<br />
+            <br />
+            Je suis basé à Montauban et je peux facilement me déplacer dans un rayon d'une cinquantaine de kilomètres autour de mon domicile si vous préférez me rencontrer en personne.
+            </p>
+        </div>
+        <div class="container">
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mdobpvae" method="post">
+                <fieldset id="fs-frm-inputs">
+                    <div class="form-name">
+                        <label for="full-name">Prénom et nom</label>
+                        <input class="input" type="text" name="name" id="full-name" placeholder="Ada Lovelace" required="">
+                    </div>
+                    <div class="form-email">
+                        <label for="email-address">Adresse mail</label>
+                        <input class="input" type="email" name="_replyto" id="email-address" placeholder="ada.lovelace@email.com" required="">
+                    </div>
+                    <div class="form-message">
+                        <label for="message">Message</label>
+                        <textarea class="textarea" rows="5" name="message" id="message" placeholder="Bonjour David,..." required=""></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <div class="form-btn">
+                    <input class="form__btn" type="submit" value="ENVOYER">
+                </div>
+            </form>
+        </div>
+        
+        <p class="retrouvez__text">Retrouvez-moi également sur <span class="link">Linkedin</span> et <span class="link">WeLoveDevs</span>.</p>
+        
+        <div class="social">
+            <img src="/images/Github.svg" alt="Icone Github">
+            <img class="icone" src="/images/LinkedIn.svg" alt="Icone LinkedIn">
+            <img src="/images/twitter.svg" alt="Icone Twitter">
+        </div>
+    
+        <p class="footer">Site conçu par <span class="link">Sofia</span> et codé par David | Copyright &copy;David PEREZ 2022 | <span class="link">Mentions légales</span></p>
+    </section>
+</body>
+</html>
