@@ -19,7 +19,7 @@
 
 .card {
     width: 816px;
-    height: 850px;
+    padding-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 80px;

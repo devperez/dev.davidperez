@@ -44,14 +44,14 @@
         </div>
         <nav>
             <div>
-                <a href="#hero"><img class="logo" src="images/logo.svg" alt="logo"></a>
+                <a href="#réalisations"><img class="logo" src="images/logo.svg" alt="logo"></a>
             </div>
 
             <div class="navbar">
                 <a class="links" href="index.html">MES PRESTATIONS</a>
                 <a class="links" href="realisations.html">MES RÉALISATIONS</a>
                 <a class="links" href="#portfolio">QUI SUIS-JE ?</a>
-                <a class="links" href="#contact-me">CONTACTEZ-MOI</a>
+                <a class="links" href="#contact">CONTACTEZ-MOI</a>
                 <a class="icon1" href="https://github.com/devperez" target="_blank"  rel="noopener noreferrer"><img class="icon" src="images/Github.svg"></a>
                 <a class="icon2" href="https://www.linkedin.com/in/david-perez2/" target="_blank" rel="noopener noreferrer"><img class="icon" src="images/LinkedIn.svg"></a>
                 <a class="icon3" href="https://twitter.com/Endymion666" target="_blank" rel="noopener noreferrer"><img class="icon" src="images/twitter.svg"></a>
@@ -59,7 +59,7 @@
         </nav>
     </header>
 
-    <section class="realisations">
+    <section class="realisations" id="réalisations">
         <div class="realisations__wrapper">
             <img src="/images/angle-bracket.svg" alt="flèche décorative" />
             <h2 class="realisations__title">Mes réalisations</h2>
@@ -85,12 +85,67 @@
             <div class="images__wrapper">
                 <a href="images/backoffice1(1).png" data-title="Visualisation de tous les mails enregistrés en base de données" data-lightbox="image1"><img src="/images/backoffice1__min.png" /></a>
                 <a href="images/backoffice2(1).png" data-title="Visualisation des mails enregistrés au cours du mois" data-lightbox="image2"><img src="/images/backoffice2(2).png" /></a>
-                <a href="images/backoffice3.png" data-title="Page permettant de mettre à jour les menus" data-lightbox="image3"><img src="/images/backoffice3(1).png" />
-                <a href="images/backoffice4.png" data-title="Formulaire permettant de créer un nouvel administrateur" data-lightbox="image4"><img src="/images/backoffice4(1).png" />
+                <a href="images/backoffice3.png" data-title="Page permettant de mettre à jour les menus" data-lightbox="image3"><img src="/images/backoffice3(1).png" /></a>
+                <a href="images/backoffice4.png" data-title="Formulaire permettant de créer un nouvel administrateur" data-lightbox="image4"><img src="/images/backoffice4(1).png" /></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 class="card__title">Mon site professionnel</h3>
+            <div class="picture__wrapper">
+                <a href="#" target="_blank" rel="noopener noreferrer"><img class="picture" src="/images/site_pro.png" alt="Capture d'écran de la page d'accueil de mon site professionnel" /></a>
+            </div>
+            <div class="tech">
+                Figma | HTML | CSS | Bootstrap | JQuery | Lightbox |
+            </div>
+            <div class="card__text__wrapper">
+                <p class="card__text">
+                    C'est le site sur lequel vous êtes. Pour mon site professionnel, j'aurais pu choisir Wordpress et modifier un thème mais j'ai préféré partir de zéro. Je n'ai pas utilisé de framework parce que le projet
+                    est simple. J'ai tout codé en HTLM et CSS, j'ai rajouté un peu de Bootstrap pour le carrousel des recommandations en page d'accueil et la librairie Lightbox sur la pages des réalisations qui permet d'agrandir les images lorsqu'on clique dessus.
+                    Comme je ne voulais pas devoir créer un back office pour gérer les messages envoyés par le formulaire, j'ai externalisé leur traitement en passant par Formspree ce qui permet de gagner du temps.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 class="card__title">Dark Immortal</h3>
+            <div class="picture__wrapper">
+                <a href="https://darkimmortal.fr/" target="_blank" rel="noopener noreferrer"><img class="picture" src="/images/darkimmortal.png" alt="Capture d'écran de la page d'accueil du site Dark Immortal" /></a>
+            </div>
+            <div class="tech">
+                HTML | CSS | Bootstrap | JQuery | Ajax | Laravel | SQL |
+            </div>
+            <div class="card__text__wrapper">
+                <p class="card__text">
+                    Grand fan de musique, j'ai plus ou moins toujours tenu un blog pour partager mes découvertes. Il y a quelques années, quand la plateforme de mon blog a fermé, j'ai perdu mon blog et pour éviter que ce genre de problème ne se reproduise, je me suis dit que la meilleure façon était de coder le site.
+                    C'est un projet qui est en cours, j'ai encore beaucoup de choses à améliorer, notamment côté back office, mais c'est fonctionnel. J'aimerais juste avoir plus de temps pour publier plus régulièrement.
+                    Le petit plus sur la page d'accueil est le widget qui permet de récupérer le flux RSS d'un autre site pour l'afficher dans le footer, en bas de page.
+                </p>
+            </div>
+            <div class="images__wrapper">
+                <a href="images/darkimmortal1.png" data-title="Visualisation de tous les posts enregistrés en base de données" data-lightbox="image5"><img src="/images/darkimmortal1__min.png" /></a>
+                <a href="images/darkimmortal2.png" data-title="Visualisation de la page qui permet d'écrire les articles" data-lightbox="image6"><img src="/images/darkimmortal2__min.png" /></a>
+                <a href="images/darkimmortal3.png" data-title="Page d'accueil du back office avec raccourci vers le dernier article publié" data-lightbox="image7"><img src="/images/darkimmortal3__min.png" /></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 class="card__title">Picture Box</h3>
+            <div class="picture__wrapper">
+                <a href="https://picturebox.web.app/" target="_blank" rel="noopener noreferrer"><img class="picture" src="/images/picturebox.png" alt="Capture d'écran de l'application Picture Box" /></a>
+            </div>
+            <div class="tech">
+                HTML | CSS | React |
+            </div>
+            <div class="card__text__wrapper">
+                <p class="card__text">
+                    Cette application est un projet que j'avais en tête depuis quelques temps. Le but ici était double : d'une part rendre "hommage" d'une certaine façon aux figures littéraires qui m'ont influencées pendant mon adolescence et mes années de jeune adulte et d'autre part jouer un peu avec la librairie React pour la prendre en main.
+                    Chaque carte est interactive. Au clic sur une photo, une pop-up s'affiche avec un court texte de présentation. Il est possible d'aggrandir les images du carrousel d'un simple clic.
+                </p>
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact__wrapper">
             <img src="/images/angle-bracket.svg" alt="flèche décorative" />
             <h2 class="contact__title">Contactez-moi</h2>
