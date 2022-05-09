@@ -20,9 +20,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="realisations.css">
-    <link rel="stylesheet" href="lightbox.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/realisations.css">
+    <link rel="stylesheet" href="CSS/lightbox.css">
 
     <link rel="icon" href="images/favicon.ico">
 
@@ -31,26 +31,27 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="lightbox.js"></script>
+    <script src="/JS/lightbox.js"></script>
+    <script src="/JS/transition.js"></script>
 
 </head>
 
 <body>
 
     <header>
-        <div class="language">
+        <!-- <div class="language">
             <p class="français">Français</p>
             <p class="english">English</p>
-        </div>
+        </div> -->
         <nav>
             <div>
                 <a href="#réalisations"><img class="logo" src="images/logo.svg" alt="logo"></a>
             </div>
 
             <div class="navbar">
-                <a class="links" href="index.html">MES PRESTATIONS</a>
-                <a class="links" href="realisations.html">MES RÉALISATIONS</a>
-                <a class="links" href="#portfolio">QUI SUIS-JE ?</a>
+                <span class="links" onclick="transitionToPage('index.html')">MES PRESTATIONS</span>
+                <a class="links" href="#realisations">MES RÉALISATIONS</a>
+                <span class="links" onclick="transitionToPage('quisuisje.html')">QUI SUIS-JE ?</span>
                 <a class="links" href="#contact">CONTACTEZ-MOI</a>
                 <a class="icon1" href="https://github.com/devperez" target="_blank"  rel="noopener noreferrer"><img class="icon" src="images/Github.svg"></a>
                 <a class="icon2" href="https://www.linkedin.com/in/david-perez2/" target="_blank" rel="noopener noreferrer"><img class="icon" src="images/LinkedIn.svg"></a>
@@ -78,8 +79,8 @@
                 <p class="card__text">
                     Julie voulait un site sur lequel elle pourrait changer elle-même les menus. J'ai créé une partie administration qui lui permet, sans mon intervention, de faire ses changements, comme elle le souhaite.
                     Elle peut également récupérer les adresses mails des internautes qui s'inscrivent à sa newsletter.<br />
-                    Les miniatures ci-dessous illustrent cette partie "cachée" du site.<br />
-                    Le site lui permet de communiquer sur toutes les autres activités qu'elle mène de front en plus du restaurant.
+                    Le site lui permet de communiquer sur toutes les autres activités qu'elle mène de front en plus du restaurant.<br />
+                    Les miniatures ci-dessous illustrent cette partie "cachée" du site.
                 </p>
             </div>
             <div class="images__wrapper">
@@ -184,9 +185,9 @@
         <p class="retrouvez__text">Retrouvez-moi également sur <span class="link">Linkedin</span> et <span class="link">WeLoveDevs</span>.</p>
         
         <div class="social">
-            <img src="/images/Github.svg" alt="Icone Github">
-            <img class="icone" src="/images/LinkedIn.svg" alt="Icone LinkedIn">
-            <img src="/images/twitter.svg" alt="Icone Twitter">
+            <a class="icon1" href="https://github.com/devperez" target="_blank"  rel="noopener noreferrer"><img class="icon" src="images/Github.svg"></a>
+                <a class="icon2" href="https://www.linkedin.com/in/david-perez2/" target="_blank" rel="noopener noreferrer"><img class="icon" src="images/LinkedIn.svg"></a>
+                <a class="icon3" href="https://twitter.com/Endymion666" target="_blank" rel="noopener noreferrer"><img class="icon" src="images/twitter.svg"></a>
         </div>
     
         <p class="footer">Site conçu par <span class="link">Sofia</span> et codé par David | Copyright &copy;David PEREZ 2022 | <span class="link">Mentions légales</span></p>

@@ -20,7 +20,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="CSS/styles.css">
 
   <link rel="icon" href="images/favicon.ico">
 
@@ -29,15 +29,17 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="/JS/transition.js"></script>
+
 </head>
 
 <body>
 
   <header>
-    <div class="language">
+    <!-- <div class="language">
       <p class="français">Français</p>
       <p class="english">English</p>
-    </div>
+    </div> -->
     <nav>
       <div>
         <a href="#hero"><img class="logo" src="images/logo.svg" alt="logo"></a>
@@ -45,8 +47,8 @@
 
       <div class="navbar">
         <a class="links" href="#prestations">MES PRESTATIONS</a>
-        <a class="links" href="realisations.html">MES RÉALISATIONS</a>
-        <a class="links" href="#portfolio">QUI SUIS-JE ?</a>
+        <span class="links" onclick="transitionToPage('realisations.html')">MES RÉALISATIONS</span>
+        <span class="links" onclick="transitionToPage('quisuisje.html')">QUI SUIS-JE ?</span>
         <a class="links" href="#contact">CONTACTEZ-MOI</a>
         <a class="icon1" href="https://github.com/devperez" target="_blank"  rel="noopener noreferrer"><img class="icon" src="images/Github.svg"></a>
         <a class="icon2" href="https://www.linkedin.com/in/david-perez2/" target="_blank" rel="noopener noreferrer"><img class="icon" src="images/LinkedIn.svg"></a>
@@ -83,7 +85,7 @@
       <p class="pourquoi__text">Pour vous guider dans la création de votre site, vous pourrez facilement trouver sur internet un nombre incalculable de ressources, de sites et de tutoriels, alors quel est l'intérêt de le faire créer par un spécialiste ? Un site conçu et réalisé par un professionnel suscitera plus facilement la confiance chez son visiteur et aura plus de chances de transformer une simple visite en une vente.</p>
       <br />
       <p class="pourquoi__text">C'est là tout mon travail ! En accord avec votre image, vos valeurs et vos souhaits, je vous créerai :<br />
-        <ul>
+        <ul class="pourquoi__text">
           <li>un site moderne, intuitif et épuré,</li>
           <li>un site adapté à toutes les tailles d'écrans,</li>
           <li>un site bien référencé pour que l'on vous trouve facilement,</li>
@@ -181,7 +183,7 @@
         <br />
         J’ai créé plusieurs pages afin de présenter les diverses activités de Lili BOwL, comme ses projets de sensibilisation à la cuisine saine et éco-responsable et ses formations à la cuisine végétale. J’ai ajouté la possibilité de s'abonner à une newsletter pour recevoir les menus du restaurant qui changent tous les mois.
         j’ai créé une interface d'administration pour Julie et ses employés qui offre plusieurs fonctionnalités :<br /></p>
-        <ul>
+        <ul class="projet__text">
           <li>gestion des comptes administrateurs (création et suppression),</li>
           <li>gestion des adresses mails données par les utilisateurs (possibilité de les exporter au format CSV),</li>
           <li>publication des menus.</li>
@@ -232,9 +234,9 @@
     <p class="retrouvez__text">Retrouvez-moi également sur <span class="link">Linkedin</span> et <span class="link">WeLoveDevs</span>.</p>
     
     <div class="social">
-      <img src="/images/Github.svg" alt="Icone Github">
-      <img class="icone" src="/images/LinkedIn.svg" alt="Icone LinkedIn">
-      <img src="/images/twitter.svg" alt="Icone Twitter">
+      <a class="icon1" href="https://github.com/devperez" target="_blank"  rel="noopener noreferrer"><img class="icon" src="images/Github.svg"></a>
+                <a class="icon2" href="https://www.linkedin.com/in/david-perez2/" target="_blank" rel="noopener noreferrer"><img class="icon" src="images/LinkedIn.svg"></a>
+                <a class="icon3" href="https://twitter.com/Endymion666" target="_blank" rel="noopener noreferrer"><img class="icon" src="images/twitter.svg"></a>
     </div>
 
     <p class="footer">Site conçu par <span class="link">Sofia</span> et codé par David | Copyright &copy;David PEREZ 2022 | <span class="link">Mentions légales</span></p>

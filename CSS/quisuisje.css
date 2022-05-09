@@ -1,0 +1,75 @@
+body {
+    opacity:0;
+    transition:opacity .5s;
+}
+
+.quisuisje {
+    background-color: #21004D;
+    padding-top: 120px;
+}
+
+.quisuisje__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    padding-top: 164px;
+}
+
+.quisuisje__title {
+    color: #57FFA0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+}
+
+.parcours__wrapper, .story__wrapper {
+    width: 638px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parcours__title, .story__title {
+    color: #EBDBFF;
+    font-family: 'Ubuntu Mono';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 16px;
+}
+
+.parcours__text {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F8F3FF;
+    padding-bottom: 80px;
+}
+
+.transition {
+    height: 270px;
+    background-color: #EBDBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horns {
+    width: 50px;
+    height: 94px;
+}
+
+.avatar {
+    width: 120px;
+    height: 198px;
+    margin-left: 192px;
+    margin-right: 228px;
+}
+
+.codepas {
+    background-color: #21004D;
+}
+
+.story__title {
+    padding-top: 70px;
+}
