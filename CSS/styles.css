@@ -31,7 +31,7 @@ nav {
     flex-wrap: nowrap;
 }
 
-.mobile-menu {
+.mobile-menu-wrapper {
     display: none;
 }
 
@@ -251,11 +251,11 @@ footer {
 
 .btn2 {
     background-color: #21004D;
-    border-color: #57FFA0;
+    border-color: #DDC3FF;
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
-    color: #57FFA0;
+    color: #DDC3FF;
     cursor: pointer;
     display: inline-block;
     font-family: "Open Sans", sans-serif;
@@ -291,6 +291,7 @@ footer {
 .pourquoi__wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .pourquoi__title {
@@ -322,6 +323,7 @@ footer {
 .prestations__wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .prestations__title {
@@ -501,6 +503,7 @@ footer {
     justify-content: center;
     padding-bottom: 64px;
     padding-top: 164px;
+    align-items: center;
 }
 
 .projet__title {
@@ -525,11 +528,11 @@ footer {
 
 .btn3 {
     background-color: #21004D;
-    border-color: #57FFA0;
+    border-color: #ddc3ff;
     border-radius: 5px;
     border-style: solid;
     border-width: 2px;
-    color: #57FFA0;
+    color: #DDC3FF;
     cursor: pointer;
     display: inline-block;
     font-family: "Open Sans", sans-serif;
@@ -564,11 +567,16 @@ footer {
     justify-content: center;
     padding-bottom: 64px;
     padding-top: 164px;
+    align-items: center;
 }
 
 .contact__text__wrapper {
     width: 760px;
     margin: auto;
+}
+
+.contact__title {
+    color: #57ffa0;
 }
 
 .contact__text {
@@ -680,6 +688,11 @@ label {
 /*MEDIA QUERIES */
 
 @media (max-width:1280px) {
+    
+    .mobile-menu-wrapper {
+        display: none;
+    }
+
     .links {
         font-size: 16px;
         letter-spacing: 1px;
@@ -823,8 +836,219 @@ label {
         display: none;
     }
 
-    .mobile-menu {
+    .mobile-menu-wrapper {
         display: block;
+    }
+
+    .salut {
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    .job {
+        font-size: 36px;
+        line-height: 120%;
+    }
+
+    .intro {
+        font-size: 16px;
+        line-height: 150%;
+        width: 444px;
+    }
+
+    .photo {
+        width: 236px;
+        height: 224px;
+    }
+
+    .btn1, .btn2 {
+        font-size: 14px;
+        line-height: 100%;
+        padding: 16px;
+    }
+
+    .btn2 {
+        margin-left: 16px;
+    }
+
+    .pourquoi__title {
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    .brackets {
+        width: 35px;
+        height: 35px;
+    }
+
+    .pourquoi__text__wrapper {
+        margin-top: 24px;
+        width: 560px;
+    }
+
+    .pourquoi__text {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .pourquoi {
+        padding-bottom: 64px;
+    }
+
+    .prestations__title {
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    .prestations__text__wrapper {
+        margin-top: 24px;
+        width: 560px;
+    }
+
+    .prestations__text {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .presta__item__text {
+        font-size: 16px;
+        line-height: 120%;
+        width: 247px;
+        height: 38px;
+        margin: 16px;
+    }
+
+    .presta__item__text__responsive {
+        height: 76px;
+    }
+
+    .prestagrid {
+        gap: 32px 32px;
+    }
+
+    .presta__item1 {
+        width: 279px;
+        height: 108px;
+        padding: 0;
+    }
+
+    .presta__item {
+        width: 279px;
+        height: 70px;
+        padding: 0;
+    }
+
+    .responsive-layout1 {
+        display: flex;
+        justify-self: end;
+        align-items: center;
+    }
+
+    .responsive-layout2 {
+        display: flex;
+        justify-self: start;
+        align-items: center;
+    }
+    
+    .btn {
+        padding-bottom: 64px;
+    }
+
+    /*Section RECO */
+
+    .reco__title {
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 1px;
+    }
+
+    .reco__wrapper {
+        padding-bottom: 16px;
+    }
+
+    .reco__text {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .reco__text__wrapper {
+        padding-bottom: 32px;
+    }
+
+    /*carousel*/
+
+    .carousel-item {
+        padding: 16px;
+    }
+
+    .carousel-inner {
+        width: 560px;
+        height: 306px;
+    }
+
+    .carousel__title {
+        font-size: 16px;
+        line-height: 120%;
+        padding-bottom: 16px;
+    }
+
+    .carousel__text {
+        font-size: 16px;
+        line-height: 150%;
+        width: 528px;
+        height: 216px;
+    }
+
+    /*Section projet*/
+
+    .projet__wrapper {
+        padding-top: 64px;
+        padding-bottom: 26px;
+    }
+
+    .projet__title {
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    .projet__text__wrapper {
+        width: 560px;
+    }
+
+    .projet__text {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .btn3 {
+        margin-top: 24px;
+        font-size: 14px;
+        line-height: 100%;
+        padding: 16px;
+    }
+
+    /*Section CONTACT */
+
+    .contact__wrapper {
+        padding-top: 80px;
+    }
+
+    .contact__title {
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    .contact__text__wrapper {
+        width: 560px;
+    }
+
+    .contact__text {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    #fs-frm {
+        width: 560px;
     }
 
 }
