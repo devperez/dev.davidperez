@@ -1104,8 +1104,10 @@ label {
 }
 
 @media (max-width: 375px) {
+
     .herobox {
         flex-direction:column-reverse;
+        
     }
     
     .photobox {
@@ -1118,8 +1120,8 @@ label {
     .herotext {
         width: 339px;
         padding-left: 18px;
-        padding-right: 18px;
         padding-top: 40px;
+        padding-bottom: 68px;
     }
 
     .salut {
@@ -1146,10 +1148,87 @@ label {
     .btn1 {
         width: 153px;
         letter-spacing: 0.6px;
+        white-space: nowrap;
     }
 
     .btn2 {
         width: 170px;
         letter-spacing: 0.6px;
+        white-space: nowrap;
     }
+
+    .pourquoi__wrapper {
+        margin-left: 18px;
+        width: 312px;
+    }
+
+    .pourquoi__text__wrapper {
+        width: 327px;
+    }
+
+    .pourquoi__title {
+        text-align: center;
+    }
+
+    .prestations__text__wrapper {
+        width: 327px;
+    }
+
+    .prestagrid__wrapper {
+        margin-left: 12%;
+    }
+
+    .prestagrid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-top: 32px;
+    }
+
+    .reco__wrapper {
+        padding-bottom: 24px;
+    }
+
+    .reco__text__wrapper {
+        width: 327px;
+        margin: auto;
+    }
+
+    .carousel-inner {
+        width: 327px;
+        height: 450px;
+    }
+
+    .carousel-item {
+        height: 450px;
+    }
+
+    .carousel__text {
+        width: 295px;
+    }
+
+    .projet__text__wrapper {
+        width: 327px;
+    }
+
+    .contact__text__wrapper {
+        width: 327px;
+    }
+
+    .form-wrapper, form, .form-name, .input, .textarea {
+        width: 327px;
+    }
+
+    form {
+        padding-bottom: 72px;
+    }
+
+    .retrouvez__text {
+        width: 214px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
