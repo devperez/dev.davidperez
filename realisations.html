@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/realisations.css">
     <link rel="stylesheet" href="CSS/lightbox.css">
+    <link rel="stylesheet" href="CSS/mobile_navbar.css">
+
 
     <link rel="icon" href="images/favicon.ico">
 
@@ -33,6 +35,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="/JS/lightbox.js"></script>
     <script src="/JS/transition.js"></script>
+    <script src="/JS/mobile_navbar.js"></script>
+
 
 </head>
 
@@ -48,7 +52,7 @@
                 <a href="#réalisations"><img class="logo" src="images/logo.svg" alt="logo"></a>
             </div>
 
-            <div class="navbar">
+            <div class="navbar__desktop">
                 <span class="links" onclick="transitionToPage('index.html')">MES PRESTATIONS</span>
                 <a class="links" href="#realisations">MES RÉALISATIONS</a>
                 <span class="links" onclick="transitionToPage('quisuisje.html')">QUI SUIS-JE ?</span>
@@ -58,6 +62,28 @@
                 <a class="icon3" href="https://twitter.com/Endymion666" target="_blank" rel="noopener noreferrer"><img class="icon" src="images/twitter.svg"></a>
             </div>
         </nav>
+        <!-- menu mobile hamburger-->
+        <div class="mobile-menu-wrapper">
+            <div class="mobile-nav-button">
+                <div class="mobile-nav-button__line"></div>
+                <div class="mobile-nav-button__line"></div>
+                <div class="mobile-nav-button__line"></div>
+            </div>
+    
+            <nav class="mobile-menu">
+                <ul>
+                    <li><a class="mobile-menu-item" href="#prestations">MES PRESTATIONS</a></li>
+                    <li><span class="mobile-menu-item" onclick="transitionToPage('realisations.html')">MES RÉALISATIONS</span></li>
+                    <li><span class="mobile-menu-item" onclick="transitionToPage('quisuisje.html')">QUI SUIS-JE ?</span></li>
+                    <li><a class="mobile-menu-item" href="#contact">CONTACTEZ-MOI</a></li>
+                </ul>
+                <div class="social__icons__wrapper">
+                    <a class="social__icons social__icon1" href="https://github.com/devperez" target="_blank"  rel="noopener noreferrer"><img class="icon" src="images/mobile_menu_Github_icon.svg"></a>
+                    <a class="social__icons social__icon2" href="https://www.linkedin.com/in/david-perez2/" target="_blank" rel="noopener noreferrer"><img class="icon" src="images/mobile_menu_LinkedIn_icon.svg"></a>
+                    <a class="social__icons" href="https://twitter.com/Endymion666" target="_blank" rel="noopener noreferrer"><img class="icon" src="images/mobile_menu_Twitter_icon.svg"></a>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <section class="realisations" id="réalisations">
