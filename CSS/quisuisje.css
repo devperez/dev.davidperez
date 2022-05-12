@@ -73,3 +73,151 @@ body {
 .story__title {
     padding-top: 70px;
 }
+
+/*MEDIA QUERIES*/
+
+@media (max-width:1280px) {
+
+    .quisuisje__wrapper {
+        padding-top: 68px;
+        align-items: center;
+        padding-bottom: 52px;
+    }
+
+    .quisuisje__title {
+        font-size: 40px;
+    }
+
+    .parcours__wrapper {
+        width: 680px;
+    }
+
+    .parcours__title {
+        font-size: 32px;
+        line-height: 130%;
+        margin-bottom: 24px;
+    }
+
+    .parcours__text {
+        font-size: 18px;
+        line-height: 150%;
+        padding-bottom: 48px;
+    }
+
+    .transition {
+        height: 232px;
+    }
+
+    .avatar {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .story__wrapper {
+        width: 680px;
+    }
+
+    .story__title {
+        padding-top: 48px;
+        margin-bottom: 24px;
+        font-size: 32px;
+        line-height: 130%;
+    }
+
+    .story__text {
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
+
+@media (max-width:1100px) {
+
+    .navbar__desktop {
+        display: none;
+    }
+
+    .mobile-menu-wrapper {
+        display: block;
+    }
+
+    .quisuisje__wrapper {
+        padding-top: 32px;
+        padding-bottom: 24px;
+    }
+
+    .quisuisje__title {
+        font-size: 24px;
+    }
+
+    .parcours__wrapper {
+        width: 560px;
+    }
+
+    .parcours__title {
+        font-size: 20px;
+    }
+
+    .parcours__text {
+        font-size: 16px;
+    }
+
+    .transition {
+        height: 168px;
+    }
+
+    .horns {
+        width: 32px;
+        height: 60px;
+    }
+
+    .avatar {
+        width: 72.73px;
+        height: 120px;
+        margin-left: 71px;
+        margin-right: 71px;
+    }
+
+    .story__wrapper {
+        width: 560px;
+    }
+
+    .story__title {
+        padding-top: 32px;
+        font-size: 20px;
+    }
+
+    .story__text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:375px) {
+
+    .parcours__wrapper {
+        width: 327px;
+    }
+
+    .parcours__title {
+        margin-bottom: 8px;
+    }
+
+    .parcours__text {
+        padding-bottom: 24px;
+    }
+
+    .story__wrapper {
+        width: 327px;
+    }
+
+    .story__title {
+        padding-top: 24px;
+        margin-bottom: 8px;
+    }
+
+    .contact__wrapper {
+        width: 224px;
+        white-space: nowrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

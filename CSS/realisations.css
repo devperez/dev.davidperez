@@ -3,6 +3,10 @@ body {
     transition:opacity .5s;
 }
 
+.links {
+    cursor: pointer;
+}
+
 .realisations {
     background-color: #21004D;
     padding-top: 120px;
