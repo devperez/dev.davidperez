@@ -201,4 +201,31 @@ body {
         line-height: 130%;
         white-space: nowrap;
     }
+
+    .card {
+        width: 327px;
+    }
+
+    .picture {
+        width: 295px;
+    }
+
+    .card__text__wrapper {
+        width: 295px;
+    }
+
+    .images__wrapper {
+        width: 295px;
+        margin-left: 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto; 
+        gap: 15px 2px; 
+        justify-content: start; 
+        justify-items: start; 
+    }
+
+    .contact__wrapper {
+        width: 375px;
+    }
 }
