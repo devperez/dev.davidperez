@@ -84,3 +84,44 @@ body {
 .backoffice {
     width: 125px
 }
+
+/*MEDIA QUERIES */
+
+@media (max-width:1280px) {
+
+    .realisations__wrapper {
+        align-items: center;
+        padding-top: 72px;
+        padding-bottom: 52px;
+    }
+
+    .realisations__title {
+        font-size: 40px;
+    }
+
+    .card {
+        margin-top: 0;
+        width: 644px;
+        padding-bottom: 48px;
+    }
+
+    .card__title {
+        margin-left: 32px;
+    }
+
+    .picture {
+        width: 580px;
+    }
+
+    .tech {
+        margin-left: 32px;
+        font-size: 16px;
+    }
+
+    .card__text__wrapper {
+        width: 580px;
+        font-size: 20px;
+        line-height: 150%;
+    }
+
+}
