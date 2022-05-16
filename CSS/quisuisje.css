@@ -3,6 +3,10 @@ body {
     transition:opacity .5s;
 }
 
+.links {
+    cursor: pointer;
+}
+
 .quisuisje {
     background-color: #21004D;
     padding-top: 120px;
@@ -130,7 +134,7 @@ body {
     }
 }
 
-@media (max-width:1100px) {
+@media (min-width:376px), (max-width:1100px) {
 
     .navbar__desktop {
         display: none;

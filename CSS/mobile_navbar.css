@@ -1,14 +1,13 @@
 .mobile-nav-button {
     width: 35px;
     position: absolute;
-    margin: 2rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
     right: 0;
     top: 0;
     z-index: 9999;
     cursor: pointer;
-    width: 35px;
     height: 30px;
-
 }
 
 .mobile-nav-button .mobile-nav-button__line {
@@ -47,7 +46,7 @@
     display: block;
     max-width: 500px;
     width: 100%;
-    right: -100%;
+    right: 100%;
     height: 100vh;
     background: #f8F3FF;
     position: absolute;
@@ -89,7 +88,7 @@
     letter-spacing: 1.6px;
 }
 
-.mobile-menu ul li span:after, a:after {
+/* .mobile-menu ul li span:after, a:after {
     content: "";
     background: #21004D;
     width: 100%;
@@ -99,7 +98,7 @@
     top: 0;
     z-index: -1;
     transition: 0.4s ease;
-}
+} */
 
 .mobile-menu ul li span:hover, a:hover {
     color: #f8F3FF;

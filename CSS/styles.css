@@ -35,6 +35,10 @@ nav {
     display: none;
 }
 
+.links {
+    cursor: pointer;
+}
+
 /* /!\ J'ai ajouté 36px de margin-top au-dessus de la nav quand j'ai enlevé les liens vers English et français. */
 
 .language {
@@ -196,7 +200,6 @@ footer {
 
 .photo {
     width: 360px;
-    /* height: 341px; */
 }
 
 .salut {
@@ -597,6 +600,8 @@ form {
     width: 528px;
     padding-top: 64px;
     padding-bottom: 96px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ::placeholder {
@@ -733,7 +738,6 @@ label {
 
     .pourquoi {
         padding-bottom: 112px;
-
     }
 
     .pourquoi__title {
@@ -831,7 +835,7 @@ label {
     }
 }
 
-@media (max-width:1100px) {
+@media (min-width:1100px) and (max-width:1279px) {
     .navbar__desktop {
         display: none;
     }
@@ -1103,25 +1107,45 @@ label {
     }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width:1099px) {
+
+    .navbar__desktop {
+        display: none;
+    }
+
+    .mobile-menu-wrapper {
+        display: block;
+    }
+
+    .logo {
+        margin-left: 24px;
+    }
+
+    header {
+        width:100%;
+    }
 
     .herobox {
         flex-direction:column-reverse;
-        
     }
     
     .photobox {
-        margin-right: 25%;
-        margin-left: 12%;
+        margin-right: auto;
+        margin-left: auto;
         padding-bottom: 0;
+        padding-right: 0;
         margin-top: 24px;
+        display: flex;
+        justify-content: center;
     }
 
     .herotext {
         width: 339px;
-        padding-left: 18px;
+        margin-left: auto;
+        margin-right: auto;
         padding-top: 40px;
         padding-bottom: 68px;
+        padding-left: 0;
     }
 
     .salut {
@@ -1158,7 +1182,8 @@ label {
     }
 
     .pourquoi__wrapper {
-        margin-left: 18px;
+        margin-left: auto;
+        margin-right: auto;
         width: 312px;
     }
 
@@ -1172,15 +1197,32 @@ label {
 
     .prestations__text__wrapper {
         width: 327px;
+        margin-bottom: 24px;
+    }
+
+    .prestations__text {
+        padding-bottom: 0;
     }
 
     .prestagrid__wrapper {
-        margin-left: 12%;
+        margin-left: auto;
+        margin-right: auto;
+        width:374px;       
     }
 
     .prestagrid {
         display: flex;
         flex-direction: column;
+        width: 374px;
+        align-items: center;
+    }
+
+    .presta__item1, .presta__item {
+        width: 279px;
+    }
+
+    .presta__item__text__responsive {
+        width: 247px;
     }
 
     .btn {
