@@ -1,0 +1,26 @@
+body {
+    opacity:0;
+    transition:opacity .5s;
+}
+
+.mentions {
+    background-color: #21004D;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.mentions__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    padding-top: 164px;
+}
+
+.mentions__text {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.4px;
+    color: #DDC3FF;
+    margin-left: 18px;
+}
