@@ -88,7 +88,7 @@
     letter-spacing: 1.6px;
 }
 
-.mobile-menu ul li span:after, a:after {
+/* .mobile-menu ul li span:after, a:after {
     content: "";
     background: #21004D;
     width: 100%;
@@ -98,10 +98,12 @@
     top: 0;
     z-index: -1;
     transition: 0.4s ease;
-}
+} */
+
+
 
 .mobile-menu ul li span:hover, a:hover {
-    color: #f8F3FF;
+    color: #21004d;
     cursor: pointer;
 }
 
