@@ -1,13 +1,46 @@
 .mobile-nav-button {
-    width: 35px;
     position: absolute;
-    margin-top: 2rem;
-    margin-right: 2rem;
+    margin-top: 50px;
+    margin-right: 32px;
     right: 0;
     top: 0;
     z-index: 9999;
     cursor: pointer;
-    height: 30px;
+    color: #57FFA0;
+    border: solid 1px #57FFA0;
+    border-radius: 5px;
+    padding: 8px 16px;
+    width: 91px;
+    height: 38px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 1.6px;
+}
+
+.mobile-nav-fermer {
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 32px;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    cursor: pointer;
+    color: #21004d;
+    border: solid 1px #21004d;
+    border-radius: 5px;
+    padding: 8px;
+    width: 94px;
+    height: 38px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 1.6px;
+    display: none;
 }
 
 .mobile-nav-button .mobile-nav-button__line {
