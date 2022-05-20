@@ -1,8 +1,3 @@
-body {
-    opacity:0;
-    transition:opacity .5s;
-}
-
 .links {
     cursor: pointer;
 }
@@ -87,6 +82,15 @@ body {
 
 .backoffice {
     width: 125px
+}
+
+.linkmail {
+    color: #57FFA0;
+}
+
+.carbonbadge {
+    margin-top: 36px;
+    margin-bottom: 24px;
 }
 
 /*MEDIA QUERIES */

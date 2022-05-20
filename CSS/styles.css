@@ -10,8 +10,6 @@ body {
     font-size: 1.25rem;
     line-height: 160%;
     width: 100%;
-    opacity:0;
-    transition:opacity .5s;
 }
 
 header {
@@ -704,6 +702,15 @@ label {
     margin-top: 36px;
     padding-bottom: 32px;
     text-align: center;
+}
+
+.linkmail {
+    color: #57ffa0;
+}
+
+.carbonbadge {
+    margin-top: 36px;
+    margin-bottom: 24px;
 }
 
 /*MEDIA QUERIES */

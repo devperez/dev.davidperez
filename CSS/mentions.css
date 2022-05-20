@@ -1,8 +1,3 @@
-body {
-    opacity:0;
-    transition:opacity .5s;
-}
-
 .mentions {
     background-color: #21004D;
     padding-top: 120px;

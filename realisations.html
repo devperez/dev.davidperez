@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="CSS/realisations.css">
     <link rel="stylesheet" href="CSS/lightbox.css">
     <link rel="stylesheet" href="CSS/mobile_navbar.css">
+    <link rel="stylesheet" href="CSS/fakeloader.css">
+
 
 
     <link rel="icon" href="images/favicon.ico">
@@ -34,14 +36,22 @@
     
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="/JS/lightbox.js"></script>
-    <script src="/JS/transition.js"></script>
+    <!-- <script src="/JS/transition.js"></script> -->
     <script src="/JS/mobile_navbar.js"></script>
+    <script src="/JS/fakeloader.min.js"></script>
+
 
 
 </head>
 
 <body>
-
+    <div id="fakeloader-overlay" class="visible incoming">
+        <div class="loader-wrapper-outer">
+            <div class="loader-wrapper-inner">
+                <div class="loader"></div>
+            </div>
+        </div>
+    </div>
     <header>
         <!-- <div class="language">
             <p class="français">Français</p>
@@ -53,9 +63,9 @@
             </div>
 
             <div class="navbar__desktop">
-                <span class="links" onclick="transitionToPage('index.html')">MES PRESTATIONS</span>
+                <a class="links" href="index.html">MES PRESTATIONS</a>
                 <a class="links" href="#realisations">MES RÉALISATIONS</a>
-                <span class="links" onclick="transitionToPage('quisuisje.html')">QUI SUIS-JE ?</span>
+                <a class="links" href="quisuisje.html">QUI SUIS-JE ?</a>
                 <a class="links" href="#contact">CONTACTEZ-MOI</a>
                 <a class="icon1" href="https://github.com/devperez" target="_blank"  rel="noopener noreferrer"><img class="icon" src="images/Github.svg"></a>
                 <a class="icon2" href="https://www.linkedin.com/in/david-perez2/" target="_blank" rel="noopener noreferrer"><img class="icon" src="images/LinkedIn.svg"></a>
@@ -69,9 +79,9 @@
         </div>
         <nav class="mobile-menu">
             <ul>
-                <li><a class="mobile-menu-item" onclick="transitionToPage('index.html')">MES PRESTATIONS</a></li>
-                <li><span class="mobile-menu-item" href="#realisations">MES RÉALISATIONS</span></li>
-                <li><span class="mobile-menu-item" onclick="transitionToPage('quisuisje.html')">QUI SUIS-JE ?</span></li>
+                <li><a class="mobile-menu-item" href="index.html">MES PRESTATIONS</a></li>
+                <li><a class="mobile-menu-item" href="#realisations">MES RÉALISATIONS</a></li>
+                <li><a class="mobile-menu-item" href="quisuisje.html">QUI SUIS-JE ?</a></li>
                 <li><a class="mobile-menu-item" href="#contact">CONTACTEZ-MOI</a></li>
             </ul>
             <div class="social__icons__wrapper">
@@ -172,7 +182,7 @@
         </div>
         <div class="contact__text__wrapper">
             <p class="contact__text">
-            Vous pouvez me contacter par mail à <span class="link">dev.davidperez@gmail.com</span>, ou en remplissant le formulaire ci-dessous.<br />
+            Vous pouvez me contacter par mail à <span class="linkmail">dev.davidperez@gmail.com</span>, ou en remplissant le formulaire ci-dessous.<br />
             <br />
             Je suis basé à Montauban et je peux facilement me déplacer dans un rayon d'une cinquantaine de kilomètres autour de mon domicile si vous préférez me rencontrer en personne.
             </p>
@@ -204,8 +214,16 @@
             <p class="qrcode__text">Scannez-moi et restons en contact !</p>
             <img class="qrcode" id="qrcode" src="/images/QR-Code4.png" alt="QR code permettant de faire passer mes coordonnées directement dans votre téléphone">
         </div>
-    
+        <div id="wcb" class="carbonbadge wcb-d"><p>Ce site est déployé chez un hébergeur vert et est codé de façon optimisée et responsable.</p></div>
+        <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
         <p class="footer">Site conçu par <a href="https://www.linkedin.com/in/miss-sofia-da-silva/" target="_blank" rel="noopener noreferrer"><span class="link">Sofia</span></a> et codé par David | Copyright &copy;David PEREZ 2022 | <span class="link">Mentions légales</span></p>
     </section>
+    <script>
+        $(document).ready(
+            function() {
+            window.FakeLoader.init( { auto_hide: true }
+            );
+        });
+    </script>
 </body>
 </html>
