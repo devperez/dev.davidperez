@@ -1,6 +1,7 @@
 html {
     margin: 0;
     padding:0;
+    background: #21004D;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
     font-size: 1.25rem;
     line-height: 160%;
     width: 100%;
+    background: #21004D;
 }
 
 header {
@@ -711,6 +713,10 @@ label {
 .carbonbadge {
     margin-top: 36px;
     margin-bottom: 24px;
+}
+
+.carbonbadge__text {
+    padding-bottom: 10px;
 }
 
 /*MEDIA QUERIES */
