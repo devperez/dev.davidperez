@@ -4,6 +4,38 @@ html {
     background: #21004D;
 }
 
+.language {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 30px;
+}
+
+#fr {
+    display: inline-block;
+    color: #57ffa0;
+    margin-right: 32px;
+
+}
+
+#en {
+    margin-right: 64px;
+}
+
+#fr, #en {
+    cursor: pointer;
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#fr:hover, #en:hover {
+    color: #57ffa0;
+}
+
+.en {
+    display:none;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -41,26 +73,8 @@ nav {
 
 /* /!\ J'ai ajouté 36px de margin-top au-dessus de la nav quand j'ai enlevé les liens vers English et français. */
 
-.language {
-    display: flex;
-    justify-content: end;
-    padding-bottom: 30px;
-}
 
-.english {
-    margin-right: 64px;
-}
 
-.français {
-    margin-right: 32px;
-}
-
-.français, .english {
-    margin-top: 24px;
-    color: #F8F3FF;
-    font-size: 16px;
-    font-weight: 400;
-}
 
 .logo {
     margin-left: 64px;
