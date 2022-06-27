@@ -36,6 +36,10 @@ html {
     display:none;
 }
 
+.bten {
+    display: none;
+}
+
 body {
     margin: 0;
     padding: 0;
