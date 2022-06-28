@@ -12,9 +12,7 @@ html {
 
 #fr {
     display: inline-block;
-    color: #57ffa0;
     margin-right: 32px;
-
 }
 
 #en {
@@ -30,14 +28,6 @@ html {
 
 #fr:hover, #en:hover {
     color: #57ffa0;
-}
-
-.en {
-    display:none;
-}
-
-.bten {
-    display: none;
 }
 
 body {

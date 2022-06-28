@@ -73,10 +73,6 @@
     padding-top: 70px;
 }
 
-.form-wrapper, form, .form-name, .input, .textarea {
-    width:680px;
-}
-
 .linkmail {
     color: #57FFA0;
 }

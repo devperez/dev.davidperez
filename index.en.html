@@ -62,8 +62,8 @@
 
     <header>
         <div class="language">
-            <a href="index.html" rel="noopener noreferer" class="links" id="fr">Français</p>
-            <a href="index.en.html" rel="noopener noreferer" class="links" id="en">English</a>
+            <a href="index.html" rel="noopener noreferer" style="color: #EBDBFF" class="links" id="fr">Français</p>
+            <a href="index.en.html" rel="noopener noreferer" style="color:#57ffa0" class="links" id="en">English</a>
         </div>
         <nav>
             <div>
@@ -71,7 +71,7 @@
             </div>
             <div class="navbar__desktop">
                 <a class="links" href="#prestations">SERVICES</a>
-                <a class="links" href="realisations.html">PORTFOLIO</a>
+                <a class="links" href="portfolio.html">PORTFOLIO</a>
                 <a class="links" href="quisuisje.html">ABOUT</a>
                 <a class="links" href="#contact" id="liencontactnav">GET IN TOUCH</a>
                 <a class="icon1" href="https://github.com/devperez" target="_blank"  rel="noopener noreferrer"><img class="icon" alt="icone Github" src="images/Github.svg"></a>
@@ -86,7 +86,7 @@
             <nav class="mobile-menu">
                 <ul>
                     <li><a class="mobile-menu-item" href="#prestations">SERVICES</a></li>
-                    <li><a class="mobile-menu-item" href="realisations.html">PORTFOLIO</a></li>
+                    <li><a class="mobile-menu-item" href="portfolio.html">PORTFOLIO</a></li>
                     <li><a class="mobile-menu-item" href="quisuisje.html">ABOUT</a></li>
                     <li><a class="mobile-menu-item" href="#contact" id="liencontactmobilenav">GET IN TOUCH</a></li>
                 </ul>
@@ -283,4 +283,17 @@
                 window.FakeLoader.init( { auto_hide: true }
                 );
             });
+
+        $(document).ready(
+            $('#fr').click('on', function() {
+                $('#fr').css('color', '#57ffa0');
+                $('#en').css('color', '#EBDBFF');
+            })
+        )
+        $(document).ready(
+            $('#en').click('on', function () {
+                $('#en').css('color', '#57ffa0');
+                $('#fr').css('color', '#EBDBFF');
+            })
+        )
     </script>

@@ -62,8 +62,8 @@
   
   <header>
     <div class="language">
-      <a href="index.html" rel="noopener noreferer" class="links" id="fr">Français</p>
-      <a href="index.en.html" rel="noopener noreferer" class="links" id="en">English</a>
+      <a href="index.html" rel="noopener noreferer" style="color:#57ffa0" class="links" id="fr">Français</p>
+      <a href="index.en.html" rel="noopener noreferer" style="color: #EBDBFF" class="links" id="en">English</a>
     </div>
     <nav>
       <div>
@@ -297,26 +297,18 @@
     );
   });
 
-  $(document).ready(
-    $('#fr').click('on', function() {
-      $('.btfr').css('display','flex');
-      $('.bten').css('display','none');
-      $('.fr').css('display','inline-block');
-      $('#fr').css('color', '#57ffa0');
-      $('.en').css('display', 'none');
-      $('#en').css('color', '#EBDBFF');
-    })
-  )
-  $(document).ready(
-    $('#en').click('on', function () {
-      $('.btfr').css('display', 'none');
-      $('.bten').css('display','flex');
-      $('.fr').css('display', 'none');
-      $('#en').css('color', '#57ffa0');
-      $('.en').css('display', 'inline-block');
-      $('#fr').css('color', '#EBDBFF');
-    })
-  )
+  // $(document).ready(
+  //   $('#fr').click('on', function() {
+  //     $('#fr').css('color', '#57ffa0');
+  //     $('#en').css('color', '#EBDBFF')
+  //   })
+  // )
+  // $(document).ready(
+  //   $('#en').click('on', function () {
+  //     $('#en').css('color', '#57ffa0');
+  //     $('#fr').css('color', '#EBDBFF');
+  //   })
+  // )
 </script>
     </body>
 </html>
