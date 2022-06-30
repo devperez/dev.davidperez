@@ -154,8 +154,9 @@
             </div>
             <div class="images__wrapper">
                 <a href="images/darkimmortal1.png" data-title="Visualisation de tous les commentaires enregistrés en base de données" data-lightbox="image5"><img src="/images/darkimmortal1__min.png" /></a>
-                <a href="images/darkimmortal2.png" data-title="Visualisation de la page d'accueil qui affiche quelques statistiques" data-lightbox="image6"><img src="/images/darkimmortal2__min.png" /></a>
+                <a href="images/darkimmortal2.png" data-title="Visualisation de la page d'accueil qui affiche quelques statistiques (dark mode on)" data-lightbox="image6"><img src="/images/darkimmortal2__min.png" /></a>
                 <a href="images/darkimmortal3.png" data-title="Visualisation de tous les articles enregistrés en base de données" data-lightbox="image7"><img src="/images/darkimmortal3__min.png" /></a>
+                <a href="images/darkimmortal4.png" data-title="Visualisation de la page de création d'un article (dark mode on)" data-lightbox="image8"><img src="/images/darkimmortal4__min.png" /></a>
             </div>
         </div>
 
@@ -216,7 +217,7 @@
         </div>
         <div id="wcb" class="carbonbadge wcb-d"><p class="carbonbadge__text">Ce site est déployé chez un hébergeur vert et est codé de façon optimisée et responsable.</p></div>
         <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
-        <p class="footer">Site conçu par <a href="https://www.linkedin.com/in/miss-sofia-da-silva/" target="_blank" rel="noopener noreferrer"><span class="link">Sofia</span></a> et codé par David | Copyright &copy;David PEREZ 2022 | <span class="link">Mentions légales</span></p>
+        <p class="footer">Site conçu par <a href="https://www.linkedin.com/in/miss-sofia-da-silva/" target="_blank" rel="noopener noreferrer"><span class="link">Sofia</span></a> et codé par David | Copyright &copy;David PEREZ 2022 | <a href="mentions.html" class="link">Mentions légales</a></p>
     </section>
     <script>
         $(document).ready(
@@ -224,6 +225,19 @@
             window.FakeLoader.init( { auto_hide: true }
             );
         });
+
+        $(document).ready(
+            $('#fr').click('on', function() {
+                $('#fr').css('color', '#57ffa0');
+                $('#en').css('color', '#EBDBFF');
+            })
+        )
+        $(document).ready(
+            $('#en').click('on', function () {
+                $('#en').css('color', '#57ffa0');
+                $('#fr').css('color', '#EBDBFF');
+            })
+        )
     </script>
 </body>
 </html>

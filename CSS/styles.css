@@ -605,6 +605,10 @@ footer {
     color: #57FFA0;
 }
 
+.link:hover {
+    color:#EBDBFF;
+}
+
 /*Section Form*/
 
 form {
@@ -735,6 +739,10 @@ label {
     
     .mobile-menu-wrapper {
         display: none;
+    }
+
+    .herobox {
+        padding-top: 15px;
     }
 
     .links {
